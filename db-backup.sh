@@ -5,7 +5,7 @@ BACKUP_FOLDER="/opt/backups/"
 LOG_FILE="/var/log/db-backup.log"
 BACKUP_TIME=$(date +"%Y-%m-%d_%H-%M")
 set -o pipefail
-source /opt/db.env
+source ./db.env
 export PGPASSWORD=$DB_PASSWORD
 
 mkdir $BACKUP_FOLDER -p
