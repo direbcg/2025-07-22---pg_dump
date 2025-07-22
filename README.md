@@ -37,7 +37,7 @@ sudo yum install postgresql
 Дать права на запуск скрипта:
 
 ```
-chmod +x /opt/db-backup.sh
+chmod +x ./db-backup.sh
 ```
 
 # Примеры вывода логов: 
@@ -50,6 +50,6 @@ chmod +x /opt/db-backup.sh
 
 Добавляем задание в cron ежедневно в 23-00
 ```
-0 23    * * *   root    test -x /usr/sbin/anacron || { cd / && run-parts --report /etc/cron.daily; }
+0 23    * * *   postgres    /opt/db-backup.sh
 ```
 
