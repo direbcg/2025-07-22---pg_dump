@@ -1,6 +1,11 @@
 # Применение
-git clone https://github.com/direbcg/2025-07-22---pg_dump.git
-
+```
+git clone https://github.com/direbcg/2025-07-22---pg_dump
+cd 2025-07-22---pg_dump/
+chmod +x db-backup.sh
+# Запуск
+./db-backup.sh
+```
 
 # ⁠Краткое описание скрипта и его назначения:
 
@@ -20,9 +25,11 @@ git clone https://github.com/direbcg/2025-07-22---pg_dump.git
 
 
 # ⁠Как настроить .env:
+
 Отредактировать файл db.env, внеся в него свои данные
 
 #⁠ ⁠Как установить зависимости:
+
 Для работы скрипта необходимы БД postgres или mariaDB. Пример установки:
 ```
 # Debian / Ubuntu
